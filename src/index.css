@@ -1,0 +1,42 @@
+:root {
+  font-family: Verdana;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #242424;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #999;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #444;
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
