@@ -12,8 +12,8 @@ function App() {
     { nome: "Sofia", idade: 28, cargo: "Analista" },
   ]);
 
-  const [searchTerm, setSearchTerm] = useState(null);
-  const [sortConfig, setSortConfig] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortConfig, setSortConfig] = useState(null);
 
   const sortedData = [...data].sort((a, b) => {
     if (sortConfig !== null) {
@@ -61,7 +61,7 @@ function App() {
       <table>
         <TableHeader onColumnClick={onColumnClick} />
         <tbody>
-          {sortedData.map((row, index) => (
+          {filteredData.map((row, index) => (
             <TableRow key={index} row={row} />
           ))}
         </tbody>
